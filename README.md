@@ -151,5 +151,9 @@ SampEn is the negative logarithm of this ratio.</br>
 
 ## Toolboxes
 
+# Open questions:
+1.- If r is calculated on each segment separately, then the increase of non-EEG noise (for example) could alter the measurement of SampEn. Should we calulate r on the entire experiment instead of on each trial? I would do it separately for each electrode.
+
+
 
 
