@@ -157,6 +157,7 @@ SampEn is the negative logarithm of this ratio.</br>
 
 ## Toolboxes
 <details><summary>click here for more</summary><p>
+
 </details>
 
 ## Testing SampEn on Raquel's data
@@ -165,12 +166,32 @@ SampEn is the negative logarithm of this ratio.</br>
 Data from 40 participants, around 800 trials each, 1000 ms pre-stimulus, sr = 1024. </br>
 
 Observations: </br>
-Average SampEn (averaged over participants and trials) is not evenly distributed across the scalp.
 
+Below you can see figures comparing SampEn with the slope of the power spectrum. At first glance we can see the topographies are quite similar, hinting at the idea that these two measures are related. Both have a varying topography and both also vary with time-on-task. What I find weird is that where in the general topography they show an opposite relation (increasing SampEn from posterior to anterior approximately, decreasing PLE), while in the time-on task they go the same way (SampEn decreases, and so does the PLE). This might be something idiosyncratic to my data, but we should keep an eye on this and also think more about the meaning of each measure. 
+
+#### 1.- Average SampEn (averaged over participants and trials) is not evenly distributed across the scalp.
+The topography of SampEn (left) is quite similar to the topography of the slope of the power spectrum (right). PLE stands for power law exponent, so that is the x in 1/f^x. A higher x means a steeper slope.
+
+Average SampEn             | Average PLE
+:-------------------------:|:-------------------------:
+![image](https://github.com/raquellondon/Sample_Entropy/blob/main/Sampen_topo.jpg) | ![image](https://github.com/raquellondon/Sample_Entropy/blob/main/PLEtopo.jpg)
+
+#### 2.- SampEn systematically changes with time on task (remember this is pre-stimulus activity).
+
+Average Correlation SampEn / Trial number             | Average Correlation PLE / Trial number
+:-------------------------:|:-------------------------:
+![image](https://github.com/raquellondon/Sample_Entropy/blob/main/Time_Sampen_Correlation_topo.jpg) |![image](https://github.com/raquellondon/Sample_Entropy/blob/main/TimeOnTaskSlopeTopo.jpg)
+Topography of t-values representing the consistency of the correlation between SampEn and trial order across participants. Electrodes marked in white were significant (FDR correction)|Topography of t-values representing the consistency of the correlation between PLE and trial order across participants. Electrodes marked in white were significant (FDR correction).
+
+Individual Correlation SampEn / Trial number             | Individual Correlation PLE / Trial number
+:-------------------------:|:-------------------------:
+![image](https://github.com/raquellondon/Sample_Entropy/blob/main/Individual_Correlation_Time_SampEn.jpg) | ![image](https://github.com/raquellondon/Sample_Entropy/blob/main/TimeOnTaskSlopeInd.jpg)
+Correlation between SampEn and trial order for each participant averaged across the significant electrodes. | Correlation between PLE and trial order for each participant averaged across the significant electrodes.
 </details>
 
 # Open questions:
-1.- If r is calculated on each segment separately, then the increase of non-EEG noise (for example) could alter the measurement of SampEn. Should we calulate r on the entire experiment instead of on each trial? I would do it separately for each electrode.
+1.- If r is calculated on each segment separately, then the increase of non-EEG noise (for example) could alter the measurement of SampEn. Should we calulate r on the entire experiment instead of on each trial? I would do it separately for each electrode.</br>
+2.- How does the non-stationarity of the data in other aspects influence SampEn? For example, if alpha increases, does that affect our measure directly?</br>
 
 
 
