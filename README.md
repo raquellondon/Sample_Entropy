@@ -17,7 +17,7 @@ Roediger, D. J., Butts, J., Falke, C., Fiecas, M. B., Klimes-Dougan, B., Mueller
 The implementation closely follows the method described by Richman and Moorman in their original paper on Sample Entropy:
 Richman, J.S., & Moorman, J.R. (2000). "Physiological time-series analysis using approximate entropy and sample entropy." American Journal of Physiology-Heart and Circulatory Physiology, 278(6), H2039-H2049.
 
-### (MATLAB)
+### MATLAB - This code has been tested
 
     function sampen_value = SampEn(data, m, r)
     
@@ -92,7 +92,7 @@ Step 3: Calculating Sample Entropy: </br>
 The ratio of counts for length m + 1 and m is calculated.</br>
 SampEn is the negative logarithm of this ratio.</br>
 
-### Python
+### Python - This code has not been tested
 
     import numpy as np
     
