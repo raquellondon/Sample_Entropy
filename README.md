@@ -1,12 +1,18 @@
 # Sample_Entropy
 
+## Explanation
+<details><summary>click here for more</summary><p>
+
 "SampEn compares segments of the time series to a template of length m + 1. If the first m timepoints match the template (within a tolerance factor r) the segment is listed as an “m match.” If all m + 1 timepoints match the template within the tolerance then the segment is also listed as an “m + 1 match.” The template-matching process is repeated so that each segment is considered a template once, and is also assessed for matching the other segments many times. The proportion of m + 1 matches to m matches is considered a measure of complexity (i.e., if a high proportion of the length m matches are also length m + 1 matches, then the time series is predictable and has low complexity). SampEn is the negative log of this proportion. As described by Lake et al. (6), higher m values and lower r values tend to reduce both the number of length m matches (Cm) and the number of length m + 1 matches (Cm1)." <br/>
 
 Roediger, D. J., Butts, J., Falke, C., Fiecas, M. B., Klimes-Dougan, B., Mueller, B. A., & Cullen, K. R. (2024). Optimizing the measurement of sample entropy in resting-state fMRI data. Frontiers in Neurology, 15, 1331365.
 
 ![image](https://github.com/user-attachments/assets/2e46c21a-3ea8-4b2a-961d-dc56fe156e3c)
 
-## Code (ChatGPT)
+</details>
+
+## Code
+<details><summary>click here for more</summary><p>
 
 The implementation closely follows the method described by Richman and Moorman in their original paper on Sample Entropy:
 Richman, J.S., & Moorman, J.R. (2000). "Physiological time-series analysis using approximate entropy and sample entropy." American Journal of Physiology-Heart and Circulatory Physiology, 278(6), H2039-H2049.
@@ -147,9 +153,21 @@ SampEn is the negative logarithm of this ratio.</br>
     # Calculate SampEn
     sampen_value = sample_entropy(data, m, r)
     print(f"Sample Entropy: {sampen_value:.4f}")
-
+</details>
 
 ## Toolboxes
+<details><summary>click here for more</summary><p>
+</details>
+
+## Testing SampEn on Raquel's data
+<details><summary>click here for more</summary><p>
+    
+Data from 40 participants, around 800 trials each, 1000 ms pre-stimulus, sr = 1024. </br>
+
+Observations: </br>
+Average SampEn (averaged over participants and trials) is not evenly distributed across the scalp.
+
+</details>
 
 # Open questions:
 1.- If r is calculated on each segment separately, then the increase of non-EEG noise (for example) could alter the measurement of SampEn. Should we calulate r on the entire experiment instead of on each trial? I would do it separately for each electrode.
