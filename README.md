@@ -173,8 +173,8 @@ https://www.physionet.org/content/sampen/1.0.0/
 
 ### PYTHON TOOLBOXES
 https://github.com/raphaelvallat/antropy </br>
-https://cschoel.github.io/nolds/
-https://github.com/MattWillFlood/EntropyHub/tree/main (also MATLAB)
+https://cschoel.github.io/nolds/ </br>
+https://github.com/MattWillFlood/EntropyHub/tree/main (also MATLAB) </br>
 
 </details>
 
