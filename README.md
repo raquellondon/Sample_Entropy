@@ -14,6 +14,9 @@ Roediger, D. J., Butts, J., Falke, C., Fiecas, M. B., Klimes-Dougan, B., Mueller
 ## Code
 <details><summary>click here for more</summary><p>
 
+### SampEn functions
+<details><summary>click here for more</summary><p>
+
 The implementation closely follows the method described by Richman and Moorman in their original paper on Sample Entropy:
 Richman, J.S., & Moorman, J.R. (2000). "Physiological time-series analysis using approximate entropy and sample entropy." American Journal of Physiology-Heart and Circulatory Physiology, 278(6), H2039-H2049.
 
@@ -153,6 +156,13 @@ SampEn is the negative logarithm of this ratio.</br>
     # Calculate SampEn
     sampen_value = sample_entropy(data, m, r)
     print(f"Sample Entropy: {sampen_value:.4f}")
+</details>
+
+### Analysis code (MATLAB)
+<details><summary>click here for more</summary><p>
+
+</details>
+
 </details>
 
 ## Toolboxes
