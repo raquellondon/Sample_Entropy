@@ -160,13 +160,21 @@ SampEn is the negative logarithm of this ratio.</br>
 
 ### Analysis code (MATLAB)
 <details><summary>click here for more</summary><p>
-
+https://github.com/raquellondon/Sample_Entropy/blob/main/test_sampen.m
 </details>
 
 </details>
 
 ## Toolboxes
-<details><summary>click here for more</summary><p>
+<details><summary>click here for more</summary><p> 
+    
+### MATLAB TOOLBOXES 
+https://www.physionet.org/content/sampen/1.0.0/
+
+### PYTHON TOOLBOXES
+https://github.com/raphaelvallat/antropy </br>
+https://cschoel.github.io/nolds/
+https://github.com/MattWillFlood/EntropyHub/tree/main (also MATLAB)
 
 </details>
 
