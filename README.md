@@ -182,6 +182,7 @@ https://github.com/MattWillFlood/EntropyHub/tree/main (also MATLAB) </br>
 <details><summary>click here for more</summary><p>
     
 Data from 40 participants, around 800 trials each, 1000 ms pre-stimulus, sr = 1024. </br>
+London, R. E., Benwell, C. S., Cecere, R., Quak, M., Thut, G., & Talsma, D. (2022). EEG alpha power predicts the temporal sensitivity of multisensory perception. European Journal of Neuroscience, 55(11-12), 3241-3255. </br>
 
 Observations: </br>
 
